@@ -18,9 +18,9 @@ A modern, web-based implementation of the classic **Minesweeper** game. This pro
 |:---:|:---:|
 | <img src="https://github.com/user-attachments/assets/a137c3d6-425a-4331-ac07-5fcecfa27d82" width="400"> | <img src="https://github.com/user-attachments/assets/14afa724-3410-466e-a19d-c24e09c98044" width="400"> |
 
-           | Game Over | 
-        |:---:|
-        | <img src="https://github.com/user-attachments/assets/66374183-545b-44f5-a6fe-ffdac686c405" width="400"> |
+| Game Over | 
+|:---:|
+| <img src="https://github.com/user-attachments/assets/66374183-545b-44f5-a6fe-ffdac686c405" width="400"> |
 
 ---
 
