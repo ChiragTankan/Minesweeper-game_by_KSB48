@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper | by Chirag Tankan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="info.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="main-container flex-center-column">
+        <h1>MineSweeper</h1>
+        <div class="game-area" id="game_area">
+            <div class="header" id="header">
+                <span class="mines give-info" id="mines">000</span>
+                <div class="button" id="buttons">
+                    <button class="setting give-info" id="setting_btn"><img src="assets/settingicon.svg"
+                            alt="setting"></button>
+                    <button class="help hint-available give-info" id="hint_btn"><svg width="84" height="87"
+                            viewBox="0 0 84 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M63.8833 46.0418C62.7 55.896 56.2458 59.8335 53.4583 62.6918C50.6667 65.5585 51.1667 66.1293 51.3542 70.3335C51.3854 70.8537 51.3099 71.3747 51.1321 71.8645C50.9544 72.3544 50.6782 72.8026 50.3206 73.1817C49.9631 73.5607 49.5317 73.8626 49.053 74.0685C48.5743 74.2745 48.0586 74.3803 47.5375 74.3793H36.4625C35.9414 74.3796 35.4257 74.2735 34.9472 74.0673C34.4686 73.8612 34.0372 73.5594 33.6794 73.1806C33.3216 72.8017 33.045 72.3538 32.8665 71.8642C32.6881 71.3746 32.6116 70.8537 32.6417 70.3335C32.6417 66.2085 33.025 65.2502 30.5417 62.6918C27.375 59.5252 19.925 55.0543 19.925 42.7585C19.906 39.7043 20.5199 36.6793 21.728 33.8742C22.9361 31.0691 24.7122 28.5446 26.9444 26.46C29.1765 24.3753 31.8164 22.7757 34.6974 21.7619C37.5785 20.7482 40.6384 20.3422 43.6841 20.5697C46.7298 20.7972 49.6954 21.6532 52.3939 23.0837C55.0925 24.5142 57.4654 26.4883 59.3631 28.8814C61.2608 31.2745 62.6422 34.0348 63.4202 36.9883C64.1981 39.9418 64.3558 43.0244 63.8833 46.0418Z"
+                                stroke="#3C6E71" stroke-width="6.25" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M35.5833 74.1501V80.4501C35.5833 82.171 36.5417 83.5835 37.7208 83.5835H46.275C47.4625 83.5835 48.4167 82.1668 48.4167 80.4501V74.1501M38.75 30.2335C36.2897 30.2346 33.9306 31.2127 32.1913 32.9527C30.4521 34.6928 29.475 37.0524 29.475 39.5126M72.55 43.6001H80.1917M64.8583 18.5501L70.2792 13.1293M69.025 64.8335L74.4458 70.2501M42 3.9043V10.0835M13.8333 13.1251L19.2167 18.5501M9.66667 70.2501L15.05 64.8335M11.45 43.6001H3.8125"
+                                stroke="#3C6E71" stroke-width="6.25" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="flag-btn give-info" id="flag_btn"><img src="assets/mine_hammer.svg"
+                            alt="flag"></button>
+                    <button class="replay-button hidden" id="replay">Replay</button>
+                </div>
+                <div class="time give-info">
+                    <span class="hrs" id="hrs">00</span>:<span class="min" id="min">00</span>:<span class="sec"
+                        id="sec">00</span>
+                </div>
+            </div>
+            <!-- <div class="cell-container" id="cell_container">
+                <span class="cell opened"><img src="assets/flag.png" alt="."></span>
+            </div> -->
+            <div class="cell-container" id="cell_container"></div>
+            <div class="information hidden" id="info_container">
+                <!-- <div class="info-container" id="information_container">
+                    <span class="info total-mine-info ">Total Numbers of Mines present.</span>
+                    <span class="info time-info hidden">Time will continously running, so be quick.</span>
+                    <span class="info change-hammer-info hidden">Click here to change mining mode (Mining/Flag).</span>
+                    <span class="info hint-info hidden">click here for a hint (once in a minute).</span>
+                    <span class="info cell-info hidden">click on any cell to Start.</span>
+                    <div class="info how-to-play hidden">
+                        <div class="help-container">
+                            <p><img src="assets/mine.svg" alt=""></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p>2</p>
+                            <p><img src="assets/mine.svg" alt=""></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <p class="how-to-play-text">The numbers shows that how many mines are connected to that cell
+                            around it.</p>
+                    </div>
+                </div> -->
+                <div class="btn-container">
+                    <button id="prev">Prev</button>
+                    <button id="next">Next</button>
+                </div>
+            </div>
+            <div class="game-over hidden" id="game_over">
+                <p>!! Game Over !!</p>
+            </div>
+            <div class="game-win hidden" id="game_win">
+                <p>!! Congratulations !!</p>
+                <p>Your Time-<span id="your_time">00:45</span></p>
+                <p>Best Time-<span id="best_time">00:25</span></p>
+            </div>
+            <div class="start hidden" id="start">
+                <Button id="start hidden">Start</Button>
+            </div>
+            <div class="setting-container hidden" id="settings">
+                <div class="cell"></div>
+                <label for="slider" class="slider">Cell Size. <br>
+                    <input type="range" id="slider" min="10" max="20" value="10">
+                </label>
+
+                <div class="difficulty-container">
+                    <label for="easy"><input type="radio" name="diff" checked> Easy</label>
+                    <label for="med"><input type="radio" name="diff"> Medium</label>
+                    <label for="diff"><input type="radio" name="diff"> Difficult</label>
+                </div>
+
+                <Button id="save_settings">save</Button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

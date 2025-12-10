@@ -1,0 +1,219 @@
+.information {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    cursor: default;
+    background-color: #00000084;
+}
+
+.btn-container {
+    width: 100%;
+    padding: 16px 32px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.information button {
+    background-color: #3c9197;
+    padding: 6px 16px;
+    font-size: 24px;
+    color: white;
+    border-radius: 12px;
+    border: 2px solid #1a7777;
+}
+
+.give-info {
+    position: relative;
+}
+
+.give-info::after,
+.give-info::before {
+    display: none;
+}
+
+.give-info::after {
+    background-color: #3c9197;
+    padding: 16px;
+    border: 2px solid #3C6E71;
+    border-radius: 10px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 1px;
+    position: absolute;
+}
+
+.mines::after {
+    content: "Total Numbers of Mines present.";
+    top: 50px;
+    left: 0;
+    width: 140px;
+}
+
+.mines::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    background-color: #3c9197;
+    top: 42px;
+    left: 20px;
+}
+
+.setting::after {
+    content: "Click here to change, Game Settings.";
+    top: 56px;
+    left: -60px;
+    width: 180px;
+}
+
+.setting::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    background-color: #3c9197;
+    top: 48px;
+    left: 10px;
+}
+
+.help::after {
+    content: "Click here for a Hint (Once in a minute).";
+    top: 56px;
+    left: -60px;
+    width: 180px;
+}
+
+.help::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    background-color: #3c9197;
+    top: 48px;
+    left: 10px;
+}
+
+.flag-btn::after {
+    content: "Click here or hold ctrl key to change mining mode (Mining/Flag).";
+    top: 56px;
+    left: -60px;
+    width: 220px;
+    text-align: left;
+}
+
+.flag-btn::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    background-color: #3c9197;
+    top: 48px;
+    left: 10px;
+}
+
+.time::after {
+    content: "Time will continously running, so be quick.";
+    top: 56px;
+    right: -10px;
+    width: 160px;
+    text-align: left;
+}
+
+.time::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    background-color: #3c9197;
+    top: 48px;
+    left: 30px;
+}
+
+.show-info::after,
+.show-info::before {
+    display: block !important;
+}
+
+.how-to-play::after {
+    font-family: "Jolly Lodger", system-ui;
+    content: "The numbers shows that how many mines are connected to that cell around it.";
+    letter-spacing: auto;
+    top: 56px;
+    left: -100px;
+    width: 220px;
+}
+
+.how-to-play::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    background-color: #3c9197;
+    top: 48px;
+    left: 10px;
+}
+
+@media (max-width:540px) {
+    .give-info::after {
+        padding: 8px;
+        border: 1px solid #3C6E71;
+        font-size: 18px;
+    }
+
+    .mines::after {
+        left: -10px;
+        width: 110px;
+    }
+
+    .setting::after {
+        top: 46px;
+        width: 130px;
+    }
+
+    .setting::before {
+        top: 38px;
+        left: 5px;
+    }
+
+    .help::after {
+        top: 46px;
+        left: -50px;
+        width: 130px;
+    }
+
+    .help::before {
+        top: 38px;
+        left: 5px;
+    }
+
+    .flag-btn::after {
+        top: 46px;
+        left: -70px;
+        width: 170px;
+        text-align: left;
+    }
+
+    .flag-btn::before {
+        top: 38px;
+        left: 5px;
+    }
+
+    .time::after {
+        width: 130px;
+        text-align: left;
+    }
+}
