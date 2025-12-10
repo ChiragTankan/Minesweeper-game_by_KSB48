@@ -1,85 +1,67 @@
 # 🚩 Minesweeper Game by KSB48
 
-![Project Status](https://img.shields.io/badge/status-active-success)
-![License](https://img.shields.io/badge/license-MIT-blue)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Platform](https://img.shields.io/badge/Platform-Web-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-A robust and interactive implementation of the classic **Minesweeper** game. This project features a fully playable game board, custom difficulty settings, and intelligent logic for mine generation and cell revealing.
+A modern, web-based implementation of the classic **Minesweeper** game. This project features a clean UI, a hint system, and interactive gameplay logic.
+
+## 🔗 Play Live
+
+### [👉 Click Here to Play the Game](https://chiragtankan.github.io/Minesweeper-game_by_KSB48/)
+
+---
+
+## 📸 Screenshots
+
+| Start Screen | Gameplay |
+|:---:|:---:|
+| <img src="screenshots/home.png" width="400"> | <img src="screenshots/gameplay.png" width="400"> |
+
+| Game Over | Feature Rich UI |
+|:---:|:---:|
+| <img src="screenshots/gameover.png" width="400"> | <img src="screenshots/win.png" width="400"> |
+
+---
+
+## 👥 Team Members (KSB48)
+
+This project was collaboratively developed by:
+
+*   **Chirag Tankan** - *Developer & Maintainer*
+*   **Manvi Singh** - *Developer*
+*   **Vidhushi Joshi** - *Developer*
+
+---
 
 ## 🌟 Features
 
-- **Classic Gameplay**: Authentic Minesweeper mechanics (left-click to reveal, right-click to flag).
-- **Dynamic Board Generation**: Random mine placement ensures a new game every time.
-- **Difficulty Levels**: 
-  - Beginner (9x9)
-  - Intermediate (16x16)
-  - Expert (30x16)
-- **Game Over & Win States**: Clear visual feedback when you win or hit a mine.
-- **(Optional) AI Solver**: Contains logic to assist or automatically solve the board.
+*   **Interactive UI**: Clean interface with a timer and mine counter.
+*   **Hint System 💡**: Stuck? Use the bulb icon to get a hint on a safe move.
+*   **Tools Menu 🔨**: Advanced options for gameplay customization.
+*   **Game States**: Clear "Start", "Game Over", and "Replay" overlays.
+*   **Responsive Grid**: Dynamic grid generation with authentic Minesweeper logic.
 
 ## 🛠️ Tech Stack
 
-*Update this section based on your specific language:*
-- **Language**: Python / C++ / JavaScript (Choose one)
-- **Libraries**: Pygame / Tkinter / Standard IO
-- **Tools**: Git, GitHub
+*   **HTML5**: Structure and layout.
+*   **CSS3**: Styling, grid layout, and visual effects.
+*   **JavaScript**: Game logic, mine generation, and event handling.
 
-## 🚀 Getting Started
+## 🚀 How to Run Locally
 
-Follow these instructions to get a copy of the project up and running on your local machine.
-
-### Prerequisites
-
-*   Git installed on your machine.
-*   *(If Python)*: Python 3.x installed.
-*   *(If Web)*: A modern web browser.
-*   *(If C++)*: G++ compiler or equivalent.
-
-### Installation
+If you want to run this project on your own machine without using the live link:
 
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/ChiragTankan/Minesweeper-game_by_KSB48.git
+    ```
+2.  **Navigate to the folder:**
+    ```bash
     cd Minesweeper-game_by_KSB48
     ```
-
-2.  **Run the Game:**
-
-    *   **For Python:**
-        ```bash
-        python main.py
-        # OR
-        python runner.py
-        ```
-
-    *   **For Web (HTML/JS):**
-        Open `index.html` in your browser.
-
-    *   **For C++:**
-        ```bash
-        g++ main.cpp -o minesweeper
-        ./minesweeper
-        ```
-
-## 🎮 How to Play
-
-1.  **Objective**: Clear the board without detonating any mines.
-2.  **Numbers**: Represents the number of mines in the 8 neighboring cells.
-3.  **Flagging**: Right-click (or press 'F') to mark a suspected mine.
-4.  **Winning**: Reveal all safe squares to win!
-
-## 🤝 Contributing
-
-Contributions are welcome!
-1.  Fork the project.
-2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
-3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4.  Push to the branch (`git push origin feature/AmazingFeature`).
-5.  Open a Pull Request.
-
-## ✍️ Authors
-
-- **Chirag Tankan** - *Initial work*
-- **KSB48** - *Project Group / Identifier*
+3.  **Run the Game:**
+    Simply open the `index.html` file in any web browser (Chrome, Edge, Firefox).
 
 ---
-*Made with ❤️ by ChiragTankan*
+*Made with ❤️ by KSB48*
