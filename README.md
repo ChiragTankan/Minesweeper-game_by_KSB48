@@ -28,9 +28,8 @@ A modern, web-based implementation of the classic **Minesweeper** game. This pro
 
 This project was collaboratively developed by:
 
-*   **Chirag Tankan** - *Developer & Maintainer*
-*   **Manvi Singh** - *designer*
-*   **Vidhushi Joshi** - *designer*
+*   **Chirag Tankan** - *JS-Developer & Maintainer*
+*   **Manvi Singh** - *frontend-developer*
 
 ---
 
@@ -65,6 +64,7 @@ If you want to run this project on your own machine without using the live link:
 
 ---
 *Made with ❤️ by KSB48*
+
 
 
 
