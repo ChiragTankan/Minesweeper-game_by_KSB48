@@ -1,4 +1,4 @@
-# 🚩 Minesweeper Game by KSB48
+# 🚩 Minesweeper Game by Team KSB48
 
 ![Status](https://img.shields.io/badge/Status-Active-success)
 ![Platform](https://img.shields.io/badge/Platform-Web-blue)
@@ -63,7 +63,8 @@ If you want to run this project on your own machine without using the live link:
     Simply open the `index.html` file in any web browser (Chrome, Edge, Firefox).
 
 ---
-*Made with ❤️ by KSB48*
+*Made with ❤️ by Team KSB48*
+
 
 
 
